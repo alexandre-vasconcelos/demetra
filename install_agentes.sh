@@ -21,8 +21,6 @@ echo "instalando Bitdefender..."
 
 tar xvpf installer.tar
 
-cd installer
-
 chmod +x installer
 
 ./installer
