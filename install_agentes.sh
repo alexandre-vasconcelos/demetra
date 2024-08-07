@@ -33,7 +33,7 @@ tar xvpf UnitPlatformDirectAgent-opensuse.tar.gz
 
 cd UnitPlatformDirectAgent-Installer
 
-zypper install openssl-devel bc
+zypper install openssl-devel bc -y
 
 ./install.sh
 
