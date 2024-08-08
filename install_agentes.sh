@@ -33,14 +33,19 @@ tar xvpf UnitPlatformDirectAgent-opensuse.tar.gz
 
 cd UnitPlatformDirectAgent-Installer
 
-zypper install openssl-devel bc -y
+zypper install openssl-devel -y
 
 ./install.sh
 
 echo "desconectando da conta SUSE..."
 SUSEConnect --cleanup
 
+echo "Liberando porta 8970 no firewall..."
+
+firewall-cmd --zone=public --add-port=8970/tcp --permanent
+firewall-cmd --reload
 
 echo "Instalacao dos agentes realizada com sucesso!!!"
- sleep 4
+sleep 2
+
 
