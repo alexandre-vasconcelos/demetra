@@ -17,16 +17,6 @@ sudo systemctl start wazuh-agent
 
 echo "Wazuh instalado com sucesso..."
 
-echo "instalando Bitdefender..."
-
-tar xvpf installer.tar
-
-chmod +x installer
-
-./installer
-
-echo "Bitdefender instalado com sucesso..."
-
 echo "instalando Netwall..."
 
 tar xvpf UnitPlatformDirectAgent-opensuse.tar.gz
